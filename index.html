@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Distribuidora Oficial Cimes</title>
     <link rel="icon" type="image/png" href="Logos/Logo-cimes - Editado.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1078,7 +1078,7 @@
     </header>
 
     <section class="hero">
-        <video class="hero-video" src="Veideo_Hero/Video-Hero.mp4" autoplay muted loop playsinline></video>
+        <video class="hero-video" id="heroVideo" src="Veideo_Hero/Video-Hero.mp4" autoplay muted loop playsinline webkit-playsinline preload="auto"></video>
         <div class="hero-overlay"></div>
         
         <div class="hero-content" style="position: relative; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; max-width: 800px; margin: 0 auto; gap: 24px;">
@@ -1602,6 +1602,13 @@
 
         // Cinematic Reveal Loader Logic
         window.addEventListener('load', () => {
+            // Forzar reproducción del video para celulares restrictivos
+            const video = document.getElementById('heroVideo');
+            if (video) {
+                video.muted = true;
+                video.play().catch(e => console.log("Autoplay prevenido:", e));
+            }
+
             setTimeout(() => {
                 const reveal = document.getElementById('cinematicReveal');
                 if (reveal) {
