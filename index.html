@@ -1181,49 +1181,51 @@
 
     <script>
         const dbJSON = `[
-            {"id": "p1", "name": "Agua Alcalina", "description": "Retornable", "size": "20 Litros", "price": 4200, "category": "Botellones retornables", "image": "Botellones retornables/20lt-aguaalcalina.webp", "badge": null},
-            {"id": "p2", "name": "Agua Menos Sodio", "description": "Retornable", "size": "20 Litros", "price": 4200, "category": "Botellones retornables", "image": "Botellones retornables/20lts-Menos-sodio.webp", "badge": null},
-            {"id": "p3", "name": "Agua de Mesa", "description": "Retornable", "size": "20 Litros", "price": 4200, "category": "Botellones retornables", "image": "Botellones retornables/20lts-agua-de-mesa.webp", "badge": "Más vendido"},
-            {"id": "p4", "name": "Botellón Cimes", "description": "Retornable", "size": "12 Litros", "price": 3100, "category": "Botellones retornables", "image": "Botellones retornables/Botellon-12-lts.webp", "badge": null},
-            {"id": "p5", "name": "Botellón Menos Sodio", "description": "Retornable", "size": "12 Litros", "price": 3100, "category": "Botellones retornables", "image": "Botellones retornables/Botellon-12lts-menos-sodio.webp", "badge": null},
-            {"id": "p6", "name": "Botellón Descartable", "description": "Práctico", "size": "650 cc", "price": 3000, "category": "Botellones descartables", "image": "Botellones descartables/Botellones-descartables.webp", "badge": null},
+            {"id": "p1", "name": "Agua Alcalina", "description": "Retornable", "size": "20 Litros", "price": 12000, "category": "Botellones retornables", "image": "Botellones retornables/20lt-aguaalcalina.webp", "badge": null},
+            {"id": "p2", "name": "Agua Menos Sodio", "description": "Retornable", "size": "20 Litros", "price": 11000, "category": "Botellones retornables", "image": "Botellones retornables/20lts-Menos-sodio.webp", "badge": null},
+            {"id": "p3", "name": "Agua de Mesa", "description": "Retornable", "size": "20 Litros", "price": 10000, "category": "Botellones retornables", "image": "Botellones retornables/20lts-agua-de-mesa.webp", "badge": "Más vendido"},
+            {"id": "p4", "name": "Botellón Cimes", "description": "Retornable", "size": "12 Litros", "price": 8500, "category": "Botellones retornables", "image": "Botellones retornables/Botellon-12-lts.webp", "badge": null},
+            {"id": "p5", "name": "Botellón Menos Sodio", "description": "Retornable", "size": "12 Litros", "price": 9000, "category": "Botellones retornables", "image": "Botellones retornables/Botellon-12lts-menos-sodio.webp", "badge": null},
+            {"id": "p6", "name": "Botellón Descartable", "description": "Práctico", "size": "6.5 Litros", "price": 4000, "category": "Botellones descartables", "image": "Botellones descartables/Botellones-descartables.webp", "badge": null},
             {"id": "p7", "name": "Agua Mineralizada", "description": "Sin Gas", "size": "600 cc", "price": 800, "category": "Botellas de agua y soda", "image": "Botellas de agua y soda/Botella agua mineralizada 600 cc.webp", "badge": null},
-            {"id": "p8", "name": "Agua Mineralizada", "description": "Sin Gas", "size": "2 Litros", "price": 1200, "category": "Botellas de agua y soda", "image": "Botellas de agua y soda/Botella agua mineralizada- 2lts.webp", "badge": null},
-            {"id": "p9", "name": "Agua de Mesa", "description": "Familiar", "size": "2.25 Litros", "price": 1300, "category": "Botellas de agua y soda", "image": "Botellas de agua y soda/Botella-de-agua de-mesa 2.25 lts.webp", "badge": null},
-            {"id": "p10", "name": "Agua Clásica", "description": "Familiar", "size": "600 cc", "price": 800, "category": "Botellas de agua y soda", "image": "Botellas de agua y soda/botella-agua-600cc.webp", "badge": null},
-            {"id": "p11", "name": "Soda Clásica", "description": "Familiar", "size": "600 cc", "price": 800, "category": "Botellas de agua y soda", "image": "Botellas de agua y soda/Soda-600cc.webp", "badge": null},
+            {"id": "p8", "name": "Agua Mineralizada", "description": "Sin Gas", "size": "2 Litros", "price": 1050, "category": "Botellas de agua y soda", "image": "Botellas de agua y soda/Botella agua mineralizada- 2lts.webp", "badge": null},
+            {"id": "p9", "name": "Agua de Mesa", "description": "Familiar", "size": "2.25 Litros", "price": 1100, "category": "Botellas de agua y soda", "image": "Botellas de agua y soda/Botella-de-agua de-mesa 2.25 lts.webp", "badge": null},
+            {"id": "p11", "name": "Soda Clásica", "description": "Familiar", "size": "600 cc", "price": 850, "category": "Botellas de agua y soda", "image": "Botellas de agua y soda/Soda-600cc.webp", "badge": null},
             {"id": "p12", "name": "Soda en Botella", "description": "Familiar", "size": "2.25 Litros", "price": 1400, "category": "Botellas de agua y soda", "image": "Botellas de agua y soda/Soda-en-botella- 2.25lts.webp", "badge": null},
-            {"id": "p13", "name": "Sifón Descartable", "description": "Soda", "size": "2 Litros", "price": 1600, "category": "Sifon descartable", "image": "Sifon descartable/Sifon-descartable-2lts.webp", "badge": null},
-            {"id": "p14", "name": "Sifón de Soda", "description": "Retornable", "size": "1.5 Litros", "price": 1200, "category": "Sodas retornables", "image": "Sodas retornables/Sifon-de-soda-retornable-1.5lts.jpeg", "badge": "Más vendido"},
-            {"id": "p16", "name": "Saborizada Clásica", "description": "Suavemente Gasificada", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/Saborizadas-suavemnte-gasificadas.webp", "badge": null},
-            {"id": "p18", "name": "Saborizada Manzana", "description": "Suavemente Gasificada", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/Suavemnet-gasificada-Manzana.webp", "badge": null},
-            {"id": "p19", "name": "Saborizada Citrus", "description": "Suavemente Gasificada", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/Suavemnet-gasificada-citrus.webp", "badge": null},
-            {"id": "p20", "name": "Saborizada Pera", "description": "Suavemente Gasificada", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/Suavemnet-gasificada-pera.webp", "badge": null},
-            {"id": "p21", "name": "Saborizada Pomelo", "description": "Suavemente Gasificada", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/Suavemnet-gasificada-pomelo.webp", "badge": null},
-            {"id": "p22", "name": "Pomelo", "description": "Con Gas", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/pomelo-con-gas.webp", "badge": null},
-            {"id": "p23", "name": "Saborizada Naranja", "description": "Sin Gas", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/saborizada-naranja-sin-gas.webp", "badge": null},
-            {"id": "p24", "name": "Gaseosa Lima Limón", "description": "Original", "size": "2.25 Litros", "price": 2400, "category": "Gaseosas", "image": "Gaseosas/Gaseosa-de-lima.webp", "badge": null},
-            {"id": "p25", "name": "Gaseosa Naranja", "description": "Refrescante", "size": "2.25 Litros", "price": 2400, "category": "Gaseosas", "image": "Gaseosas/Gaseosa-de-naranja.webp", "badge": null},
-            {"id": "p26", "name": "Gaseosas Cimes", "description": "Cola, Naranja, Limón", "size": "2.25 Litros", "price": 2400, "category": "Gaseosas", "image": "Gaseosas/Gaseosas cimes-cola-naranja-limon.webp", "badge": null},
-            {"id": "p27", "name": "Bebida Hidratante Cool Blue", "description": "Energía", "size": "500 cc", "price": 1000, "category": "Bebidas isotonicas", "image": "Bebidas isotonicas/Bebida-Hidratante-cool blue.webp", "badge": null},
-            {"id": "p28", "name": "Bebida Hidratante Manzana", "description": "Energía", "size": "500 cc", "price": 1000, "category": "Bebidas isotonicas", "image": "Bebidas isotonicas/Bebida-Hidratante-manzana.webp", "badge": null},
-            {"id": "p29", "name": "Edulcorante Stevia", "description": "Líquido", "size": "250 cc", "price": 2000, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorante-Stevia-de-250-cc.jpeg", "badge": null},
+            {"id": "p12_1", "name": "Agua Mineral Natural", "description": "Sin Gas", "size": "600 cc", "price": 1300, "category": "Botellas de agua y soda", "image": "Botellas de agua y soda/agua minera natural 600cc.jpeg", "badge": null},
+            {"id": "p13", "name": "Sifón Descartable", "description": "Soda", "size": "2 Litros", "price": 2200, "category": "Sifon descartable", "image": "Sifon descartable/Sifon-descartable-2lts.webp", "badge": null},
+            {"id": "p13_1", "name": "Sifón Retornable (Cajón)", "description": "Cajón 12 unidades", "size": "650 cc", "price": 9000, "category": "Sodas retornables", "image": "Sodas retornables/Sifón de 650 cc se vende x cajón 12 unidades.jpeg", "badge": null},
+            {"id": "p14", "name": "Sifón de Soda", "description": "Retornable", "size": "1.5 Litros", "price": 1800, "category": "Sodas retornables", "image": "Sodas retornables/Sifon-de-soda-retornable-1.5lts.jpeg", "badge": "Más vendido"},
+            {"id": "p24", "name": "Gaseosa Lima Limón", "description": "Original", "size": "2.25 Litros", "price": 1600, "category": "Gaseosas", "image": "Gaseosas/Gaseosa-de-lima.webp", "badge": null},
+            {"id": "p25", "name": "Gaseosa Naranja", "description": "Refrescante", "size": "2.25 Litros", "price": 1600, "category": "Gaseosas", "image": "Gaseosas/Gaseosa-de-naranja.webp", "badge": null},
+            {"id": "p25_1", "name": "Gaseosa Pomelo", "description": "Refrescante", "size": "2.25 Litros", "price": 1600, "category": "Gaseosas", "image": "Gaseosas/Gaseosas 2,25 lts-pomelo.jpeg", "badge": "Nuevo"},
+            {"id": "p27", "name": "Bebida Hidratante Cool Blue", "description": "Energía", "size": "750 cc", "price": 1400, "category": "Bebidas isotonicas", "image": "Bebidas isotonicas/Bebida-Hidratante-cool blue.webp", "badge": null},
+            {"id": "p28", "name": "Bebida Hidratante Manzana", "description": "Energía", "size": "750 cc", "price": 1400, "category": "Bebidas isotonicas", "image": "Bebidas isotonicas/Bebida-Hidratante-manzana.webp", "badge": null},
+            {"id": "p29", "name": "Edulcorante Stevia", "description": "Líquido", "size": "250 cc", "price": 1950, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorante-Stevia-de-250-cc.jpeg", "badge": null},
             {"id": "p30", "name": "Edulcorante Clásico", "description": "Líquido", "size": "500 cc", "price": 2500, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorantes-clasicos-de-500cc.jpeg", "badge": null},
-            {"id": "p31", "name": "Edulcorante Clásico Pequeño", "description": "Líquido", "size": "250 cc", "price": 1500, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorantes-clasicos-de-250-cc.jpeg", "badge": null},
-            {"id": "p32", "name": "Agua en Lata", "description": "Premium", "size": "473 cc", "price": 1200, "category": "Latas de agua y soda", "image": "Latas de agua y soda/agua-en-lata.webp", "badge": null},
-            {"id": "p33", "name": "Soda en Lata", "description": "Premium", "size": "473 cc", "price": 1200, "category": "Latas de agua y soda", "image": "Latas de agua y soda/soda-en-lata.webp", "badge": null},
-            {"id": "p34", "name": "Soda en Lata (Variante)", "description": "Premium", "size": "473 cc", "price": 1200, "category": "Latas de agua y soda", "image": "Latas de agua y soda/soda-en-lata-2.webp", "badge": null},
-            {"id": "p35", "name": "Dispenser Frío Calor", "description": "Equipo compacto y moderno.", "size": "1 Unidad", "price": 50000, "category": "Equipos frio calor", "image": "Equipos frio calor/dispenser-mini-natural-calliente.jpeg", "badge": "Nuevo"},
-            {"id": "p37", "name": "Saborizada Naranja Durazno", "description": "Sin Gas", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/Agua-saborizada-sin-Gas--Naranja-durazno.jpeg", "badge": "Nuevo"},
-            {"id": "p38", "name": "Saborizada Pera", "description": "Sin Gas", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/Agua-saborizada-sin-gas-Pera.jpeg", "badge": null},
-            {"id": "p40", "name": "Saborizada Naranja", "description": "Suavemente Gasificada", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/Agua-saborizada-suavemnete-gasificada-naranja.jpeg", "badge": null},
-            {"id": "p42", "name": "Saborizada Citrus", "description": "Sin Gas", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/agua-saborizada-sin-gas-sabor-citrus.jpeg", "badge": null},
-            {"id": "p43", "name": "Saborizada Pomelo", "description": "Sin Gas", "size": "1.5 Litros", "price": 1500, "category": "Saborizadas", "image": "Saborizadas/agua-saborizada-sin-gas-sabor-pomelo.jpeg", "badge": null},
-            {"id": "p44", "name": "Botellón Retornable", "description": "Clásico", "size": "20 Litros", "price": 4200, "category": "Botellones retornables", "image": "Botellones retornables/Botellon-retornable.webp", "badge": "Nuevo"},
-            {"id": "p45", "name": "Edulcorante Stevia", "description": "Líquido", "size": "500 cc", "price": 2500, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorante-Stevia-de-500-cc.jpeg", "badge": "Nuevo"},
-            {"id": "p46", "name": "Edulcorante Sucralosa", "description": "Líquido", "size": "250 cc", "price": 2000, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorante-Sucraloza-de-250.jpeg", "badge": "Nuevo"},
-            {"id": "p47", "name": "Edulcorante Sucralosa", "description": "Líquido", "size": "500 cc", "price": 2500, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorante-Sucraloza-de-500.jpeg", "badge": "Nuevo"},
-            {"id": "p48", "name": "Botellón Bajo Sodio", "description": "Descartable", "size": "6.5 Litros", "price": 2500, "category": "Botellones descartables", "image": "Botellones descartables/Botellon-bajo-sodio-6.5-Lts.jpeg", "badge": "Nuevo"}
+            {"id": "p31", "name": "Edulcorante Clásico Pequeño", "description": "Líquido", "size": "250 cc", "price": 1600, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorantes-clasicos-de-250-cc.jpeg", "badge": null},
+            {"id": "p32", "name": "Agua en Lata", "description": "Premium", "size": "473 cc", "price": 1650, "category": "Latas de agua y soda", "image": "Latas de agua y soda/agua-en-lata.webp", "badge": null},
+            {"id": "p33", "name": "Soda en Lata", "description": "Premium", "size": "473 cc", "price": 1850, "category": "Latas de agua y soda", "image": "Latas de agua y soda/soda-en-lata.webp", "badge": null},
+            {"id": "p34", "name": "Soda en Lata (Variante)", "description": "Premium", "size": "473 cc", "price": 1850, "category": "Latas de agua y soda", "image": "Latas de agua y soda/soda-en-lata-2.webp", "badge": null},
+            {"id": "p35", "name": "Dispenser Frío Calor", "description": "Equipo compacto y moderno.", "size": "1 Unidad", "price": "Consultar", "category": "Equipos frio calor", "image": "Equipos frio calor/dispenser-mini-natural-calliente.jpeg", "badge": null},
+            {"id": "p35_1", "name": "Dispenser Mini Calor Natural", "description": "Equipo compacto", "size": "1 Unidad", "price": "Consultar", "category": "Equipos frio calor", "image": "Equipos frio calor/Dispenser mini Calor - Natura.jpeg", "badge": "Nuevo"},
+            {"id": "s1", "name": "Saborizada Naranja Durazno", "description": "Suavemente Gasificada", "size": "2 Litros", "price": 1800, "category": "Saborizadas", "image": "Saborizadas/Agua saborizada-Suavemente Gasificada-2l-Naranja durazno.jpeg", "badge": null},
+            {"id": "s4", "name": "Saborizada Citrus", "description": "Suavemente Gasificada", "size": "2 Litros", "price": 1800, "category": "Saborizadas", "image": "Saborizadas/Suavemnet-gasificada-citrus.webp", "badge": null},
+            {"id": "s7", "name": "Saborizada Pomelo", "description": "Suavemente Gasificada", "size": "2 Litros", "price": 1800, "category": "Saborizadas", "image": "Saborizadas/agua saborizada-suavemnete gasificada-POMELO-2l.jpeg", "badge": null},
+            {"id": "s7_1", "name": "Saborizada Pera", "description": "Suavemente Gasificada", "size": "2 Litros", "price": 1800, "category": "Saborizadas", "image": "Saborizadas/agua saborzia suavemnete gasificada sabor pera-2lt.JPG", "badge": "Nuevo"},
+            {"id": "s2", "name": "Saborizada Naranja", "description": "Sin Gas", "size": "2 Litros", "price": 1800, "category": "Saborizadas", "image": "Saborizadas/Agua-saborizada-Sin-GAS-2ltNAranja.jpeg", "badge": null},
+            {"id": "s3", "name": "Saborizada Pera", "description": "Sin Gas", "size": "2 Litros", "price": 1800, "category": "Saborizadas", "image": "Saborizadas/Agua-saborizada-sin-gas-Pera.jpeg", "badge": null},
+            {"id": "s5", "name": "Saborizada Manzana", "description": "Sin Gas", "size": "2 Litros", "price": 1800, "category": "Saborizadas", "image": "Saborizadas/agua saborizada sin gas manzana-2lt.webp", "badge": null},
+            {"id": "s6", "name": "Saborizada Pomelo", "description": "Sin Gas", "size": "2 Litros", "price": 1800, "category": "Saborizadas", "image": "Saborizadas/agua saborizada sin gas pomelo-2lt.webp", "badge": null},
+            {"id": "s8", "name": "Saborizada Manzana", "description": "Sin Gas", "size": "600 cc", "price": 1100, "category": "Saborizadas", "image": "Saborizadas/saborizada sin gas  de 600cc-manzana.JPG", "badge": null},
+            {"id": "s9", "name": "Saborizada Naranja", "description": "Sin Gas", "size": "600 cc", "price": 1100, "category": "Saborizadas", "image": "Saborizadas/saborizada sin gas  de 600cc-naranja.JPG", "badge": null},
+            {"id": "s10", "name": "Saborizada Pera", "description": "Sin Gas", "size": "600 cc", "price": 1100, "category": "Saborizadas", "image": "Saborizadas/saborizada sin gas  de 600cc-pera.JPG", "badge": null},
+            {"id": "s11", "name": "Saborizada Pomelo", "description": "Sin Gas", "size": "600 cc", "price": 1100, "category": "Saborizadas", "image": "Saborizadas/saborizada sin gas  de 600cc-pomelo.JPG", "badge": null},
+            {"id": "p44", "name": "Botellón Retornable", "description": "Clásico", "size": "20 Litros", "price": 10000, "category": "Botellones retornables", "image": "Botellones retornables/Botellon-retornable.webp", "badge": "Nuevo"},
+            {"id": "p45", "name": "Edulcorante Stevia", "description": "Líquido", "size": "500 cc", "price": 2800, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorante-Stevia-de-500-cc.jpeg", "badge": "Nuevo"},
+            {"id": "p46", "name": "Edulcorante Sucralosa", "description": "Líquido", "size": "250 cc", "price": 2050, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorante-Sucraloza-de-250.jpeg", "badge": "Nuevo"},
+            {"id": "p47", "name": "Edulcorante Sucralosa", "description": "Líquido", "size": "500 cc", "price": 3100, "category": "Edulcorantes", "image": "Edulcorantes/Edulcorante-Sucraloza-de-500.jpeg", "badge": "Nuevo"},
+            {"id": "p48", "name": "Botellón Bajo Sodio", "description": "Descartable", "size": "6.5 Litros", "price": 4500, "category": "Botellones descartables", "image": "Botellones descartables/Botellon-bajo-sodio-6.5-Lts.jpeg", "badge": "Nuevo"}
         ]`;
 
         let products = [];
@@ -1343,7 +1345,7 @@
                     <p class="product-desc">${product.description}</p>
                     <div class="product-meta">
                         <span class="product-size">${product.size}</span>
-                        <span class="product-price">$${product.price.toLocaleString('es-AR')}</span>
+                        <span class="product-price">${typeof product.price === 'number' ? '$' + product.price.toLocaleString('es-AR') : product.price}</span>
                     </div>
                     <div class="card-controls" onclick="event.stopPropagation()">
                         <div class="qty-selector">
@@ -1467,7 +1469,7 @@
                         </div>
                         <div class="cart-item-info">
                             <h4 class="cart-item-title">${item.name} (${item.size})</h4>
-                            <div class="cart-item-price">$${((item.price || 0) * (item.qty || 1)).toLocaleString('es-AR')}</div>
+                            <div class="cart-item-price">${typeof item.price === 'number' ? '$' + ((item.price || 0) * (item.qty || 1)).toLocaleString('es-AR') : item.price}</div>
                             <div class="cart-item-controls">
                                 <div class="qty-selector" style="width: 100px;">
                                     <button class="qty-btn" onclick="updateCartQty('${item.id}', -1)">-</button>
@@ -1481,7 +1483,7 @@
                 `).join('');
             }
 
-            const total = cart.reduce((acc, item) => acc + ((item.price || 0) * (item.qty || 1)), 0);
+            const total = cart.reduce((acc, item) => acc + (typeof item.price === 'number' ? item.price * (item.qty || 1) : 0), 0);
             document.getElementById('cartSubtotal').textContent = `$${total.toLocaleString('es-AR')}`;
             document.getElementById('cartTotal').textContent = `$${total.toLocaleString('es-AR')}`;
         }
@@ -1541,7 +1543,7 @@
             document.getElementById('pmName').textContent = product.name;
             document.getElementById('pmDesc').textContent = product.description;
             document.getElementById('pmSize').textContent = product.size;
-            document.getElementById('pmPrice').textContent = `$${product.price.toLocaleString('es-AR')}`;
+            document.getElementById('pmPrice').textContent = typeof product.price === 'number' ? `$${product.price.toLocaleString('es-AR')}` : product.price;
             document.getElementById('pmQty').value = 1;
 
             const modal = document.getElementById('productModal');
