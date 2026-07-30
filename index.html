@@ -1504,18 +1504,18 @@
             let total = 0;
             let hasConsultar = false;
             
-            let message = `*Tienda de Agua LH*\nDistribuidora oficial de cimes 🚰\n\n`;
+            let message = `Tienda de Agua LH\nDistribuidora oficial de cimes\n\n`;
             message += `Hola, quiero realizar el siguiente pedido:\n\n`;
             
-            message += `*Detalle del Pedido:*\n`;
+            message += `Detalle del Pedido:\n`;
             cart.forEach(item => {
                 const itemPrice = typeof item.price === 'number' ? item.price : 0;
                 if (typeof item.price !== 'number') hasConsultar = true;
                 total += itemPrice * item.qty;
-                message += `• ${item.name} (${item.size}) x${item.qty}\n`;
+                message += `- ${item.name} (${item.size}) x${item.qty}\n`;
             });
             
-            message += `\n*Total a pagar:* $${total.toLocaleString('es-AR')}${hasConsultar ? ' (+ consultar precio)' : ''}\n\n`;
+            message += `\nTotal a pagar: $${total.toLocaleString('es-AR')}${hasConsultar ? ' (+ consultar precio)' : ''}\n\n`;
             message += `Quedo a la espera de la confirmación. ¡Muchas gracias!`;
 
             const waNumber = '5491160342764'; // Número actualizado
